@@ -1,5 +1,0 @@
-vhdl work "divide.vhd"
-vhdl work "led4_drv.vhd"
-vhdl work "dist_sensor.vhd"
-vhdl work "clk_gen_1Hz_v6.vhd"
-vhdl work "top.vhd"
