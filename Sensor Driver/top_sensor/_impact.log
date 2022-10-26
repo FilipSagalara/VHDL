@@ -1,0 +1,712 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Tue May 17 16:09:05 2022
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: '/home/ise//auto_project.ipf' already exists.
+Original project has been renamed to '/home/ise//auto_project_1.ipf'.
+Project: /home/ise//auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.5.2
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set todefault 6 MHz regardless of explicit arguments supplied for setting the baudrates
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/xusbdfwu.hex = 1030.
+File version of /usr/share/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-358.el6.x86_64.
+Cable connection failed.
+Connecting to cable (Parallel Port - parport0).
+ WinDriver v10.31 Jungo (c) 1997 - 2011 Build Date: May 24 2011 x86_64 64bit18:13:19.
+Cable connection failed.
+Connecting to cable (Parallel Port - parport1).
+ WinDriver v10.31 Jungo (c) 1997 - 2011 Build Date: May 24 2011 x86_64 64bit18:13:19.
+Cable connection failed.
+Connecting to cable (Parallel Port - parport2).
+ WinDriver v10.31 Jungo (c) 1997 - 2011 Build Date: May 24 2011 x86_64 64bit18:13:19.
+Cable connection failed.
+Connecting to cable (Parallel Port - parport3).
+ WinDriver v10.31 Jungo (c) 1997 - 2011 Build Date: May 24 2011 x86_64 64bit18:13:19.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.5.2
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "DOnbUsb", SN:10054D123456
+INFO:iMPACT - Digilent Plugin: User Name: DOnbUsb
+INFO:iMPACT - Digilent Plugin: Product Name: Onboard USB
+INFO:iMPACT - Digilent Plugin: Serial Number: 10054D123456
+INFO:iMPACT - Digilent Plugin: Product ID: 00100005
+INFO:iMPACT - Digilent Plugin: Firmware Version: 030A
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 5/17/22 4:09 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xcf04s, Version : 15
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/14.7/ISE_DS/ISE/xcf/data/xcf04s.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf04s successfully.
+----------------------------------------------------------------------
+'1': : Manufacturer's ID = Xilinx xc3s500e, Version : 4
+INFO:iMPACT:1777 - 
+   Reading /opt/Xilinx/14.7/ISE_DS/ISE/spartan3e/data/xc3s500e.bsd...
+INFO:iMPACT:501 - '1': Added Device xc3s500e successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "/home/ise/sensor/tr/top.bit"
+'1': Loading file '/home/ise/sensor/tr/top.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '1': Added Device xc3s500e successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 5/17/22 4:09 PM
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:15 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:21 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:27 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:33 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      6 sec.
+INFO:iMPACT - Current time: 5/17/22 4:37 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      6 sec.
+INFO:iMPACT - Current time: 5/17/22 4:42 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:44 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:47 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:51 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:56 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 4:59 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 5:02 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+INFO:iMPACT - Current time: 5/17/22 5:05 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      7 sec.
+Cable is not connected.
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.5.2
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "DOnbUsb", SN:10054D123456
+INFO:iMPACT - Digilent Plugin: User Name: DOnbUsb
+INFO:iMPACT - Digilent Plugin: Product Name: Onboard USB
+INFO:iMPACT - Digilent Plugin: Serial Number: 10054D123456
+INFO:iMPACT - Digilent Plugin: Product ID: 00100005
+INFO:iMPACT - Digilent Plugin: Firmware Version: 030A
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+INFO:iMPACT - Current time: 5/17/22 5:11 PM
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     65 sec.
+INFO:iMPACT - Current time: 5/17/22 5:13 PM
+// *** BATCH CMD : Program -p 1 
+INFO:iMPACT - Current time: 5/17/22 5:13 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 5:20 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 5:28 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 5:32 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     65 sec.
+INFO:iMPACT - Current time: 5/17/22 5:36 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 5:40 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     65 sec.
+INFO:iMPACT - Current time: 5/17/22 5:43 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 5:48 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 5:51 PM
+// *** BATCH CMD : Program -p 1 
+INFO:iMPACT - Current time: 5/17/22 5:51 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: 5/17/22 5:51 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+INFO:iMPACT - Current time: 5/17/22 5:51 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 5:55 PM
+Updating config file /home/ise/sensor/tr/top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 6:04 PM
+// *** BATCH CMD : Program -p 1 
+INFO:iMPACT - Current time: 5/17/22 6:04 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.
+INFO:iMPACT - Current time: 5/17/22 6:08 PM
+// *** BATCH CMD : Program -p 1 
+INFO:iMPACT - Current time: 5/17/22 6:08 PM
+The selected cable is being used by another application.
+ Please retry the current operation.
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 0111 1011 1000 0000 0000 0000 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     66 sec.

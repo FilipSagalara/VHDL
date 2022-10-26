@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "/home/ise/sensor/tr/top_sensor.xst" -ofn "/home/ise/sensor/tr/top_sensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500General.ucf -p xc3s500e-fg320-4 top_sensor.ngc top_sensor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_sensor_map.ncd top_sensor.ngd top_sensor.pcf 
+par -w -intstyle ise -ol high -t 1 top_sensor_map.ncd top_sensor.ncd top_sensor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_sensor.twx top_sensor.ncd -o top_sensor.twr top_sensor.pcf -ucf Nexys2_500General.ucf 
+bitgen -intstyle ise -f top_sensor.ut top_sensor.ncd 
+xst -intstyle ise -ifn "/home/ise/sensor/tr/top_sensor.xst" -ofn "/home/ise/sensor/tr/top_sensor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys2_500General.ucf -p xc3s500e-fg320-4 top_sensor.ngc top_sensor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_sensor_map.ncd top_sensor.ngd top_sensor.pcf 
+par -w -intstyle ise -ol high -t 1 top_sensor_map.ncd top_sensor.ncd top_sensor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_sensor.twx top_sensor.ncd -o top_sensor.twr top_sensor.pcf -ucf Nexys2_500General.ucf 
+bitgen -intstyle ise -f top_sensor.ut top_sensor.ncd 

@@ -1,0 +1,16 @@
+EN led4_drv NULL /home/ise/sensor/tr/led4_drv.vhd sub00/vhpl10 1652803639
+AR led8_drv behavioral /home/ise/sensor/tr/led8_drv.vhd sub00/vhpl07 1652780339
+AR led4_drv behavioral /home/ise/sensor/tr/led4_drv.vhd sub00/vhpl11 1652803640
+EN divide NULL /home/ise/sensor/tr/divide.vhd sub00/vhpl00 1652803637
+AR top behav /home/ise/sensor/tr/top.vhd sub00/vhpl09 1652802817
+AR clk_gen_1hz_v6 behav /home/ise/sensor/tr/clk_gen_1Hz_v6.vhd sub00/vhpl03 1652803642
+AR ultrasonic_drv behav /home/ise/sensor/tr/ultrasonic_drv.vhd sub00/vhpl05 1652787693
+EN clk_gen_1hz_v6 NULL /home/ise/sensor/tr/clk_gen_1Hz_v6.vhd sub00/vhpl02 1652803641
+EN top NULL /home/ise/sensor/tr/top.vhd sub00/vhpl08 1652802816
+EN top_sensor NULL /home/ise/sensor/tr/top_sensor.vhd sub00/vhpl14 1652803645
+AR top_sensor behavioral /home/ise/sensor/tr/top_sensor.vhd sub00/vhpl15 1652803646
+EN dist_sensor NULL /home/ise/sensor/tr/dist_sensor.vhd sub00/vhpl12 1652803643
+AR divide combi /home/ise/sensor/tr/divide.vhd sub00/vhpl01 1652803638
+EN ultrasonic_drv NULL /home/ise/sensor/tr/ultrasonic_drv.vhd sub00/vhpl04 1652787692
+AR dist_sensor behavioral /home/ise/sensor/tr/dist_sensor.vhd sub00/vhpl13 1652803644
+EN led8_drv NULL /home/ise/sensor/tr/led8_drv.vhd sub00/vhpl06 1652780338

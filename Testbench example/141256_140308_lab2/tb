@@ -1,0 +1,5 @@
+vcom -2008 devices.vhd moduloX_golden.vhd testbanch.vhd
+vsim -voptargs=+acc work.moduloX_golden 
+add wave *
+run -all
+wave zoom full
